@@ -1,0 +1,15 @@
+<svg id="eye-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_213" data-name="Path 213" class="cls-1" d="M0,0H16V16H0Z"/>
+  <path id="Path_214" data-name="Path 214" class="cls-2" d="M1.181,9A7.335,7.335,0,0,1,15.606,9,7.335,7.335,0,0,1,1.181,9Zm7.213,3.333A3.333,3.333,0,1,0,5.06,9,3.333,3.333,0,0,0,8.394,12.333Zm0-1.333a2,2,0,1,1,2-2A2,2,0,0,1,8.394,11Z" transform="translate(-0.394 -1)"/>
+</svg>

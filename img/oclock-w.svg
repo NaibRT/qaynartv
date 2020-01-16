@@ -1,0 +1,15 @@
+<svg id="time-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_215" data-name="Path 215" class="cls-1" d="M0,0H16V16H0Z"/>
+  <path id="Path_216" data-name="Path 216" class="cls-2" d="M8.667,15.333a6.667,6.667,0,1,1,6.667-6.667A6.667,6.667,0,0,1,8.667,15.333Zm.667-6.667V5.333H8V10h4V8.667Z" transform="translate(-0.667 -0.667)"/>
+</svg>

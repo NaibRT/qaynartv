@@ -1,0 +1,15 @@
+<svg id="telegram-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #2ba0da;
+      }
+    </style>
+  </defs>
+  <path id="Path_253" data-name="Path 253" class="cls-1" d="M0,0H24V24H0Z"/>
+  <path id="Path_254" data-name="Path 254" class="cls-2" d="M12,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22ZM8.89,13.17l.013-.007.87,2.87c.112.311.266.367.453.341a.692.692,0,0,0,.41-.244l1.188-1.148,2.55,1.888c.466.257.8.124.917-.432l1.657-7.822c.183-.728-.137-1.02-.7-.788l-9.733,3.76c-.664.266-.66.638-.12.8l2.5.78Z"/>
+</svg>

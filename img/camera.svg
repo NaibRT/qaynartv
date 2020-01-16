@@ -1,0 +1,15 @@
+<svg id="vidicon-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ff3f34;
+      }
+    </style>
+  </defs>
+  <path id="Path_211" data-name="Path 211" class="cls-1" d="M0,0H24V24H0Z"/>
+  <path id="Path_212" data-name="Path 212" class="cls-2" d="M17,9.2l5.213-3.65A.5.5,0,0,1,23,5.96V18.04a.5.5,0,0,1-.787.41L17,14.8V19a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V5A1,1,0,0,1,2,4H16a1,1,0,0,1,1,1Zm0,3.159,4,2.8V8.84l-4,2.8v.718ZM3,6V18H15V6ZM5,8H7v2H5Z"/>
+</svg>
