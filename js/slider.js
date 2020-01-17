@@ -2,7 +2,6 @@ $(document).ready(() => {
 
 
     let sliderControllers = document.querySelectorAll('.insc-sc-item');
-    console.log(sliderControllers);
 
     function getindex(e) {
         sliderControllers.forEach(x => {
@@ -20,29 +19,38 @@ $(document).ready(() => {
 
     function sliderItemSize() {
         let width = $(document).outerWidth();
+
         if (width <= 992 && width >= 768) {
             let actualWidth = ((width - 50) / 3);
+            let btnWidth = (actualWidth / 2) - 10;
             document.querySelectorAll('.m-shows-main-item').forEach(x =>
                 x.style.width = `${actualWidth}px`
             )
+            $('.msmc-left,.msmc-right').css('width', `${actualWidth}`)
         }
         if (width <= 768 && width >= 576) {
             let actualWidth = ((width - 30) / 2);
+            let btnWidth = (actualWidth / 2) - 10;
             document.querySelectorAll('.m-shows-main-item').forEach(x =>
                 x.style.width = `${actualWidth}px`
             )
+            $('.msmc-left,.msmc-right').css('width', `${actualWidth}`)
         }
         if (width <= 576) {
             let actualWidth = ((width - 20));
+            let btnWidth = (actualWidth / 2) - 10;
             document.querySelectorAll('.m-shows-main-item').forEach(x =>
                 x.style.width = `${actualWidth}px`
             )
+            $('.msmc-left,.msmc-right').css('width', `${actualWidth}`)
         }
         if (width >= 992 && width < 1050) {
             let actualWidth = ((width - 40) / 3);
+            let btnWidth = (actualWidth / 2) - 10;
             document.querySelectorAll('.m-shows-main-item').forEach(x =>
                 x.style.width = `${actualWidth}px`
             )
+            $('.msmc-left,.msmc-right').css('width', `${actualWidth}`)
         }
     }
 
@@ -83,10 +91,10 @@ $(document).ready(() => {
             msm.style.left = `${x}px`;
         }
     };
-    document.querySelector('.msmc-left').addEventListener('click', () => {
+    $('.msmc-left').click(() => {
         scroll('left')
     });
-    document.querySelector('.msmc-right').addEventListener('click', () => {
+    $('.msmc-right').click(() => {
         scroll('right')
     });
 

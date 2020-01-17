@@ -1,4 +1,45 @@
 $(document).ready(function() {
+    let link = '../img/giphy.gif';
+    let closeCount = 7;
+    let img = `<img class="adverb-popup-img" src=${link} alt="">`
+    $('body, .wrap-body').toggleClass('overflow-hidden');
+    $('#advert-popup-container').append(img);
+    let interval = setInterval(() => {
+        closeCount -= 1;
+        $('.skip-btn').text(`${closeCount}`);
+    }, 1000)
+    setTimeout(() => {
+        clearInterval(interval)
+        $('.skip-btn').text('close');
+        $('.skip-btn').removeAttr('disabled');
+
+    }, 7000);
+
+    $('.skip-btn').click((e) => {
+        e.preventDefault();
+        $('#advert-popup').css({ 'display': 'none' });
+        $('body,.wrap-body').toggleClass('overflow-hidden');
+    });
+
+    $('.search-form>button').click((e) => {
+        e.preventDefault();
+        console.log('click')
+        $('#search-for').toggleClass('search-for-toggle')
+        $('.search-form>button').toggleClass('sfb-toggle')
+    });
+
+
+    // $.ajax({
+    //     type: "method",
+    //     url: "url",
+    //     data: "data",
+    //     dataType: "dataType",
+    //     success: function (response) {
+    //         let img=`<img class="adverb-popup-img" src="${}" alt="">`
+    //         $('advert-popup').append(img);
+    //     }
+    // });
+
     function smContainer(value) {
         let elemArray = $(".shows-main-container");
         Array.from(elemArray).forEach(x => {
@@ -37,7 +78,7 @@ $(document).ready(function() {
     let catNavbar = document.querySelector('.cat-navbar');
     let broadcastNavbar = document.querySelector('.broadcast-navbar');
 
-    category.addEventListener('click', (e) => {
+    $(category).click((e) => {
         console.log()
         if ($(catNavbar).css('display') === 'none') {
             catNavbar.style.display = 'flex';
@@ -51,7 +92,7 @@ $(document).ready(function() {
     });
 
     let broadcast = document.querySelector('.ni-v');
-    broadcast.addEventListener('click', (e) => {
+    $(broadcast).click((e) => {
         if (broadcastNavbar.style.display === 'none') {
             broadcastNavbar.style.display = 'flex';
             catNavbar.style.display = 'none';
@@ -65,14 +106,14 @@ $(document).ready(function() {
 
     function livePopUp(e) {
         e.preventDefault();
-        $('.live-popup').toggleClass('live-popup-toggle');
-        $('body').toggleClass('body-toggle');
+        $('.live-popup').toggleClass('display-flex');
+        $('body,.wrap-body').toggleClass('overflow-hidden');
     }
 
     function livePopDown(e) {
         e.preventDefault();
-        $(e.currentTarget).toggleClass('live-popup-toggle');
-        $('body').toggleClass('body-toggle');
+        $(e.currentTarget).toggleClass('display-flex');
+        $('body,.wrap-body').toggleClass('overflow-hidden');
     }
 
     $('.alive').click(livePopUp);

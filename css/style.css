@@ -24,6 +24,7 @@ header {
     height: 74px;
     box-shadow: 0 10px 20px 0 rgba(16, 16, 16, 0.16);
     background-color: #101010;
+    padding: 0px 20px;
 }
 
 .header-container {
@@ -175,8 +176,14 @@ a {
     position: relative;
     z-index: 0;
     height: 499px;
-    width: 50%;
+    width: 65%;
     text-align: center;
+}
+
+.mn-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
 }
 
 .main-news-img {
@@ -204,7 +211,6 @@ a {
 
 .main-news-info {
     width: 1050px;
-    margin-top: 93px;
 }
 
 .main-news-info-container {
@@ -212,12 +218,12 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    top: 74px;
+    top: 420px;
 }
 
 .mn-title-text {
+    align-self: flex-end;
     height: 144px;
-    width: 619px !important;
     box-sizing: border-box;
     overflow: hidden;
     display: -webkit-box;
@@ -231,10 +237,10 @@ a {
     letter-spacing: normal;
     text-align: right;
     color: #ffffff !important;
-    margin-left: 430px;
 }
 
 .mn-live {
+    align-self: flex-end;
     text-align: center;
     font-size: 26px;
     font-weight: bold;
@@ -243,7 +249,6 @@ a {
     line-height: 1.50;
     letter-spacing: normal;
     color: #ffffff;
-    margin-left: 894px;
     width: 155px;
     height: 41px;
     border-radius: 10px;
@@ -252,7 +257,12 @@ a {
 
 .mn-title {
     text-align: right;
-    width: 100%;
+    width: 48%;
+    position: absolute;
+    right: 11.5%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 93px;
 }
 
 .rec {
@@ -324,8 +334,12 @@ a {
     border-radius: 10px;
 }
 
+.mn-item-video>a>img {
+    width: 100%;
+}
+
 .mn-item-title {
-    width: 285px;
+    width: 100%;
     height: 78px;
     font-size: 22px;
     font-weight: bold;
@@ -855,13 +869,14 @@ a {
 
 footer {
     width: 100%;
-    height: 340px;
     background-color: #101010;
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
 }
 
 .footer-content {
@@ -991,10 +1006,10 @@ footer {
 .footer-copyright-container {
     height: 70px;
     background-color: #000000;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 20px;
 }
 
 .fcsl-item {
@@ -1581,7 +1596,6 @@ address {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
-    visibility: hidden;
     justify-content: center;
     align-items: center;
     z-index: 1111111;
@@ -1591,11 +1605,102 @@ address {
     position: relative;
 }
 
-.live-popup-toggle {
+.display-flex {
     display: flex;
-    visibility: visible;
 }
 
-.body-toggle {
-    overflow: hidden;
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+#advert-popup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#advert-popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.adverb-popup-img {
+    width: 600px;
+    height: auto;
+}
+
+.skip-btn {
+    width: 50px;
+    height: 30px;
+    background-color: #d71616;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-style: none;
+    outline: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+}
+
+#search-for {
+    transition: all 1s ease;
+    height: 40px;
+    background-color: #444444;
+    border: 0px solid transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: none;
+    color: #dfdfdf;
+}
+
+.search-for-toggle {
+    transition: all 0.5ms ease;
+    display: block !important;
+}
+
+.search-item,
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form>button {
+    border: 1px solid #101010;
+    border-style: none;
+    outline: transparent;
+    background-color: #101010;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.sfb-toggle {
+    background-color: #ff6400 !important;
+    transition: all 500ms ease;
+}
+
+@media screen and (max-width:1050px) {
+    .main-news-info,
+    .header-container,
+    .main-news-info,
+    .shows-content,
+    .last-news-container,
+    .join-container,
+    .footer-content,
+    .footer-copyright {
+        width: 100% !important;
+    }
 }

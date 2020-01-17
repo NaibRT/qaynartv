@@ -4,33 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="ie=edge">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="description" content="Free Web tutorials on HTML and CSS">
+    <meta name="author" content="John Doe">
     <title>QaynarInfo</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<script>
+    // if (screen.width <= 992) {
+    //     window.location.replace('../mobile/m-index.html');
+    // }
+</script>
 
 <body class="desktop-body">
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="/qaynartv/"><img alt="" src="./img/logo.svg" /></a>
+                <a href="/"><img alt="" src="./img/logo.svg" /></a>
             </div>
             <nav class="header-nav">
                 <div class="nav-left">
                     <div class="category">
-                        <img class="img" src="./img/category.svg" />
+                        <img class="img" src="./img/category.svg" alt="">
                         <span>Kateqoriyalar</span>
                     </div>
                     <div class="nav-item ni-v">
-                        <img class="img" src="./img/player.svg" />
+                        <img class="img" src="./img/player.svg" alt="" />
                         <span>Verlişlər</span>
                     </div>
                 </div>
                 <div class="nav-right">
                     <a href="./desktop/about.html" class="nav-item ni-h">Haqqımızda</a>
                     <a href="./desktop/contact.html" class="nav-item">Əlaqə</a>
-                    <div class="nav-item"><img src="./img/serach.svg" /></div>
-                    <div class="nav-item alive"><img class="img" src="./img/camera.svg" /><span>Canlı</span></div>
+                    <div class="nav-item search-item">
+                        <form action="" class="search-form">
+                            <input type="search" name="search" id="search-for">
+                            <label for="search-for"></label>
+                            <button type="submit"><img src="./img/serach.svg" alt=""/></button>
+                        </form>
+                    </div>
+                    <div class="nav-item alive"><img class="img" src="./img/camera.svg" alt="" /><span>Canlı</span></div>
                 </div>
             </nav>
         </div>
@@ -68,20 +82,30 @@
     <div class="live-popup">
         <video width="650px" src="" controls poster="./img/mn-news-1.png"></video>
     </div>
+    <div id="advert-popup">
+        <ins class="advert-popup-ins" data-site="" data-ad-client="" data-ad-slot="" data-name=""></ins>
+        <div id="advert-popup-container">
+            <button class="skip-btn" disabled></button>
+        </div>
+        <script async src="./js/ad.js"></script>
+    </div>
     <main>
         <section class="main-news">
-            <div class="mni-content">
-                <img class="main-news-img" src="./img/main-img.png" />
-                <div class="img-layer-right"></div>
-                <div class="img-layer-bottom"></div>
+            <div class="mn-container">
+                <div class="mni-content">
+                    <img class="main-news-img" src="./img/main-img.png" alt="" />
+                    <div class="img-layer-right"></div>
+                    <div class="img-layer-bottom"></div>
+                </div>
+                <div class="mn-title">
+                    <div class="mn-live">Qaynar live</div>
+                    <h3 class="mn-title-text">Prezident “28 May” stansiyasının qarşısında sakinlərlə görüşdü qarşısında sakinlərlə görüşdü
+                    </h3>
+                </div>
             </div>
             <div class="main-news-info-container">
                 <div class="main-news-info">
-                    <div class="mn-title">
-                        <div class="mn-live">Qaynar live</div>
-                        <h3 class="mn-title-text">Prezident “28 May” stansiyasının qarşısında sakinlərlə görüşdü qarşısında sakinlərlə görüşdü
-                        </h3>
-                    </div>
+
                     <div class="mn-three">
                         <div class="mn-head">
                             <div class="mn-head-live">
@@ -89,7 +113,7 @@
                                 <span class="mn-head-live-text">Live</span>
                             </div>
                             <div class="mn-head-mute">
-                                <img src="./img/mute.svg" />
+                                <img src="./img/mute.svg" alt="" />
                                 <span class="mn-head-mute-text">Mute</span>
                             </div>
                         </div>
@@ -97,9 +121,9 @@
                             <div class="mn-item">
                                 <div class="mn-item-video">
                                     <a href="./desktop/news.html">
-                                        <img src="./img/mn-news-1.png">
+                                        <img src="./img/mn-news-1.png" alt="">
                                         <div class="mn-item-video-play">
-                                            <img src="./img/mn-news-play.svg" />
+                                            <img src="./img/mn-news-play.svg" alt="" />
                                         </div>
                                     </a>
                                 </div>
@@ -123,9 +147,9 @@
                             <div class="mn-item">
                                 <div class="mn-item-video">
                                     <a href="./desktop/news.html">
-                                        <img src="./img/mn-news-2.png">
+                                        <img src="./img/mn-news-2.png" alt="">
                                         <div class="mn-item-video-play">
-                                            <img src="./img/mn-news-play.svg" />
+                                            <img src="./img/mn-news-play.svg" alt="" />
                                         </div>
                                     </a>
                                 </div>
@@ -146,9 +170,9 @@
                             <div class="mn-item">
                                 <div class="mn-item-video">
                                     <a href="./desktop/news.html">
-                                        <img src="./img/mn-news-3.png">
+                                        <img src="./img/mn-news-3.png" alt="">
                                         <div class="mn-item-video-play">
-                                            <img src="./img/mn-news-play.svg" />
+                                            <img src="./img/mn-news-play.svg" alt="" />
                                         </div>
                                     </a>
                                 </div>
@@ -217,7 +241,7 @@
 
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-2.png" />
+                                <img class="smi-right-img" src="./img/smi-2.png" alt="" />
                                 <span class="smi-right-new">yeni</span>
                                 <div class="smi-info">
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
@@ -228,7 +252,7 @@
                         </div>
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-3.png" />
+                                <img class="smi-right-img" src="./img/smi-3.png" alt="" />
                                 <div class="smi-info">
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-r">Azərbaycanlı rejissorun filmi Amerika
@@ -239,7 +263,7 @@
 
                         <div class="shows-main-item smi-left">
                             <a href="./desktop/news.html">
-                                <img class="smi-left-img" src="./img/smi-4.png" />
+                                <img class="smi-left-img" src="./img/smi-4.png" alt="" />
                                 <div class="smi-info">
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-l">İnsan üzlü balıq görüntüləndi</a>
@@ -268,7 +292,7 @@
 
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-2.png" />
+                                <img class="smi-right-img" src="./img/smi-2.png" alt="" />
                                 <span class="smi-right-new">yeni</span>
                                 <div class="smi-info">
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
@@ -279,7 +303,7 @@
                         </div>
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-3.png" />
+                                <img class="smi-right-img" src="./img/smi-3.png" alt="" />
                                 <div class="smi-info">
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-r">Azərbaycanlı rejissorun filmi Amerika
@@ -290,7 +314,7 @@
 
                         <div class="shows-main-item smi-left">
                             <a href="./desktop/news.html">
-                                <img class="smi-left-img" src="./img/smi-4.png" />
+                                <img class="smi-left-img" src="./img/smi-4.png" alt="" />
                                 <div class="smi-info">
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-l">İnsan üzlü balıq görüntüləndi</a>
@@ -781,7 +805,7 @@
                     <form action="">
                         <div class="input-container">
                             <img src="./img/mail.svg" alt="">
-                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input id="email" type="email" name="email" placeholder="Email">
                             <label for="email"></label>
                         </div>
                         <input class="join-form-btn" type="submit" value="Abunə ol">
