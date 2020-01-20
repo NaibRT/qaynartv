@@ -53,7 +53,7 @@ $(document).ready(() => {
     }
 
 
-    $('.m-alive').click(livePopUp);
-    $('.m-live-popup-img').click(livePopUp);
+    $('.m-alive,.m-mni-content,.m-live-popup-img').click(livePopUp);
+
 
 })

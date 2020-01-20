@@ -120,7 +120,6 @@ $(document).ready(function() {
         $('body,.wrap-body').toggleClass('overflow-hidden');
     }
 
-    $('.alive').click(livePopUp);
-    $('.main-news-img').click(livePopUp);
+    $('.alive,.main-news-img').click(livePopUp);
     $('.live-popup').click(livePopDown);
 });
