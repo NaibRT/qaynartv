@@ -1618,6 +1618,7 @@ address {
 
 .overflow-hidden {
     overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
 }
 
 #advert-popup {
