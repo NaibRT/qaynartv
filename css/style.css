@@ -1618,7 +1618,6 @@ address {
 
 .overflow-hidden {
     overflow: hidden !important;
-    position: fixed;
 }
 
 #advert-popup {
