@@ -24,7 +24,6 @@ header {
     height: 74px;
     box-shadow: 0 10px 20px 0 rgba(16, 16, 16, 0.16);
     background-color: #101010;
-    padding: 0px 20px;
 }
 
 .header-container {
@@ -511,7 +510,7 @@ a {
     border-bottom: 28px solid transparent;
     position: absolute;
     top: 0;
-    right: -40px;
+    right: -39px;
 }
 
 .smi-left {
@@ -1601,8 +1600,16 @@ address {
     z-index: 1111111;
 }
 
+.live-popup-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+}
+
 .live-popup>video {
     position: relative;
+    width: 650px;
 }
 
 .display-flex {

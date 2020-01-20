@@ -11,9 +11,8 @@ $(document).ready(() => {
     }
 
     function sbiClickEvent(e) {
-        let chel = document.querySelectorAll('#msab>li');
-        console.log(chel)
-        document.querySelectorAll('#msab>li').forEach(sbi => {
+        let msabItems = document.querySelectorAll('#msab>li');
+        msabItems.forEach(sbi => {
             sabitemClick(e.currentTarget, sbi)
         })
     }

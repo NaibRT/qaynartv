@@ -2,7 +2,11 @@ $(document).ready(function() {
     let link = '../img/giphy.gif';
     let closeCount = 7;
     let img = `<img class="adverb-popup-img" src=${link} alt="">`
-    $('body, .wrap-body').toggleClass('overflow-hidden');
+    $('body,.wrap-body').toggleClass('overflow-hidden');
+    $('body').attr({
+        'scroll': 'no'
+
+    });
     $('#advert-popup-container').append(img);
     let interval = setInterval(() => {
         closeCount -= 1;
