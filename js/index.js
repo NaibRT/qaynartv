@@ -1,48 +1,63 @@
+import createAd from './ad.js'
 $(document).ready(function() {
-    let link = '../img/giphy.gif';
-    let closeCount = 7;
-    let img = `<img class="adverb-popup-img" src=${link} alt="">`
-    $('body,.wrap-body').toggleClass('overflow-hidden');
-    $('body').attr({
-        'scroll': 'no'
+
+    $(window).scroll(function () { 
+        let top=window.scrollY;
+        if(top>=1){
+          $('header').addClass('header-fix');
+        }
+        else{
+            $('header').removeClass('header-fix');
+        }
 
     });
-    $('#advert-popup-container').append(img);
-    let interval = setInterval(() => {
-        closeCount -= 1;
-        $('.skip-btn').text(`${closeCount}`);
-    }, 1000)
-    setTimeout(() => {
-        clearInterval(interval)
-        $('.skip-btn').text('close');
-        $('.skip-btn').removeAttr('disabled');
 
-    }, 7000);
+    let adobject = null;
 
-    $('.skip-btn').click((e) => {
-        e.preventDefault();
-        $('#advert-popup').css({ 'display': 'none' });
-        $('body,.wrap-body').toggleClass('overflow-hidden');
-    });
-
-    $('.search-form>button').click((e) => {
-        e.preventDefault();
-        console.log('click')
-        $('#search-for').toggleClass('search-for-toggle')
-        $('.search-form>button').toggleClass('sfb-toggle')
-    });
-
+    fetch('https://veklam.com/item/11/1366x768/28/20/vitrin.az?fbclid=IwAR2BUKjLBamRxqymOApVRmp637DNe8wFgwWcYj1PN9bMkPBWdAdyJp74g3U', {
+            mode: 'no-cors',
+            headers: { 'Access-Control-Allow-Origin': '*' }
+        })
+        .then((Response) => {
+            let ad = Response.text();
+            ad.then(d => { d ? JSON.parse(d) : {} });
+        })
+        .catch(err => {
+            console.log(err)
+        })
 
     // $.ajax({
-    //     type: "method",
-    //     url: "url",
-    //     data: "data",
-    //     dataType: "dataType",
-    //     success: function (response) {
-    //         let img=`<img class="adverb-popup-img" src="${}" alt="">`
-    //         $('advert-popup').append(img);
+    //     type: "Get",
+    //     url: "https://veklam.com/item/11/1366x768/28/20/vitrin.az?fbclid=IwAR2BUKjLBamRxqymOApVRmp637DNe8wFgwWcYj1PN9bMkPBWdAdyJp74g3U",
+    //     dataType: 'json',
+    //     success: function(response) {
+    //         console.log(response)
+    //         adobject = createAd(response)
     //     }
     // });
+
+    // $('.advert-popup-ins').append(adobject);
+    // document.querySelector('#advert-popup').requestFullscreen().
+    // then(result => {
+    //     console.log(result)
+    // }).
+    // catch(err => {
+    //     console.log(err.message)
+    // });
+
+    $('.search-btn').click((e) => {
+       console.log(this);
+        let value=$('#search-for')[0].value;
+        if(value){
+            $(this).unbind('submit').submit()
+        }else{
+            e.preventDefault();
+        }
+ 
+        console.log('click')
+        $('#search-for').toggleClass('search-for-toggle')
+        $('.search-btn').toggleClass('sfb-toggle')
+    });
 
     function smContainer(value) {
         let elemArray = $(".shows-main-container");
@@ -110,16 +125,18 @@ $(document).ready(function() {
 
     function livePopUp(e) {
         e.preventDefault();
+        console.log('click')
         $('.live-popup').toggleClass('display-flex');
         $('body,.wrap-body').toggleClass('overflow-hidden');
     }
 
     function livePopDown(e) {
         e.preventDefault();
+        console.log('click')
         $(e.currentTarget).toggleClass('display-flex');
         $('body,.wrap-body').toggleClass('overflow-hidden');
     }
 
-    $('.alive,.main-news-img').click(livePopUp);
+    $('.alive,.main-news-img,.mn-title').click(livePopUp);
     $('.live-popup').click(livePopDown);
 });

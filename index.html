@@ -13,7 +13,7 @@
 </head>
 <script>
     if (screen.width <= 992) {
-        window.location.replace('/qaynartv/mobile/m-index.html');
+        window.location.replace('/mobile/m-index.html');
     }
 </script>
 
@@ -41,7 +41,7 @@
                         <form action="" class="search-form">
                             <input type="search" name="search" id="search-for">
                             <label for="search-for"></label>
-                            <button type="submit"><img src="./img/serach.svg" alt=""/></button>
+                            <button type="submit" class="search-btn"><img src="./img/serach.svg" alt=""/></button>
                         </form>
                     </div>
                     <div class="nav-item alive"><img class="img" src="./img/camera.svg" alt="" /><span>Canlı</span></div>
@@ -84,11 +84,9 @@
         <video src="" controls poster="./img/mn-news-1.png"></video>
     </div>
     <div id="advert-popup">
-        <ins class="advert-popup-ins" data-site="" data-ad-client="" data-ad-slot="" data-name=""></ins>
-        <div id="advert-popup-container">
-            <button class="skip-btn" disabled></button>
-        </div>
-        <script async src="./js/ad.js"></script>
+        <ins class="advert-popup-ins" data-site="" data-ad-client="" data-ad-slot="" data-name="">
+            
+        </ins>
     </div>
     <main>
         <section class="main-news">
@@ -99,9 +97,11 @@
                     <div class="img-layer-bottom"></div>
                 </div>
                 <div class="mn-title">
-                    <div class="mn-live">Qaynar live</div>
-                    <h3 class="mn-title-text">Prezident “28 May” stansiyasının qarşısında sakinlərlə görüşdü qarşısında sakinlərlə görüşdü
-                    </h3>
+                    <div class="mn-title-container">
+                        <div class="mn-live">Qaynar live</div>
+                        <h3 class="mn-title-text">Prezident “28 May” stansiyasının qarşısında sakinlərlə görüşdü qarşısında sakinlərlə görüşdü
+                        </h3>
+                    </div>
                 </div>
             </div>
             <div class="main-news-info-container">
@@ -230,9 +230,11 @@
                     <div class="shows-main-container" data-name="Üz-Üzə">
                         <div class="shows-main-item smi-left">
                             <a href="./desktop/news.html">
+                            <div>
                                 <img class="smi-left-img" src="./img/smi-1.png" alt="" />
+                                <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                            </div>
                                 <div class="smi-info">
-                                    <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-l">Ekspert: "Neft zolağına aid
             ərazilərdə yaşamaq həyat
             üçün təhlükəlidir"</a>
@@ -242,10 +244,12 @@
 
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-2.png" alt="" />
+                                <div>
+                                    <img class="smi-right-img" src="./img/smi-2.png" alt="" />
+                                    <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                                </div>
                                 <span class="smi-right-new">yeni</span>
                                 <div class="smi-info">
-                                    <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-r">Dadaşlinski kimdir? - İlk dəfə bioqrafiyasından
             danışdı</a>
                                 </div>
@@ -253,9 +257,11 @@
                         </div>
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-3.png" alt="" />
-                                <div class="smi-info">
+                                <div>
+                                    <img class="smi-right-img" src="./img/smi-3.png" alt="" />
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                                </div>
+                                <div class="smi-info">
                                     <a href="./desktop/news.html" class="smi-text smit-r">Azərbaycanlı rejissorun filmi Amerika
             səhnəsində</a>
                                 </div>
@@ -264,26 +270,25 @@
 
                         <div class="shows-main-item smi-left">
                             <a href="./desktop/news.html">
-                                <img class="smi-left-img" src="./img/smi-4.png" alt="" />
-                                <div class="smi-info">
+                                <div>
+                                    <img class="smi-left-img" src="./img/smi-4.png" alt="" />
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                                </div>
+                                <div class="smi-info">
                                     <a href="./desktop/news.html" class="smi-text smit-l">İnsan üzlü balıq görüntüləndi</a>
                                 </div>
                             </a>
                         </div>
 
                     </div>
-
-
-
-
-
-                    <div class="shows-main-container" data-name="Azərbaycan">
+                    <div class="shows-main-container" data-name="Qaynar söhbət">
                         <div class="shows-main-item smi-left">
                             <a href="./desktop/news.html">
+                            <div>
                                 <img class="smi-left-img" src="./img/smi-1.png" alt="" />
+                                <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                            </div>
                                 <div class="smi-info">
-                                    <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-l">Ekspert: "Neft zolağına aid
             ərazilərdə yaşamaq həyat
             üçün təhlükəlidir"</a>
@@ -293,10 +298,12 @@
 
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-2.png" alt="" />
+                                <div>
+                                    <img class="smi-right-img" src="./img/smi-2.png" alt="" />
+                                    <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                                </div>
                                 <span class="smi-right-new">yeni</span>
                                 <div class="smi-info">
-                                    <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
                                     <a href="./desktop/news.html" class="smi-text smit-r">Dadaşlinski kimdir? - İlk dəfə bioqrafiyasından
             danışdı</a>
                                 </div>
@@ -304,9 +311,11 @@
                         </div>
                         <div class="shows-main-item smi-right">
                             <a href="./desktop/news.html">
-                                <img class="smi-right-img" src="./img/smi-3.png" alt="" />
-                                <div class="smi-info">
+                                <div>
+                                    <img class="smi-right-img" src="./img/smi-3.png" alt="" />
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                                </div>
+                                <div class="smi-info">
                                     <a href="./desktop/news.html" class="smi-text smit-r">Azərbaycanlı rejissorun filmi Amerika
             səhnəsində</a>
                                 </div>
@@ -315,9 +324,11 @@
 
                         <div class="shows-main-item smi-left">
                             <a href="./desktop/news.html">
-                                <img class="smi-left-img" src="./img/smi-4.png" alt="" />
-                                <div class="smi-info">
+                                <div>
+                                    <img class="smi-left-img" src="./img/smi-4.png" alt="" />
                                     <img class="smi-img" src="./img/mn-news-play.svg" alt="" class="smi-play">
+                                </div>
+                                <div class="smi-info">
                                     <a href="./desktop/news.html" class="smi-text smit-l">İnsan üzlü balıq görüntüləndi</a>
                                 </div>
                             </a>
@@ -892,7 +903,11 @@
     </main>
 
 </body>
+
 <script src="./js/jquery.min.js"></script>
-<script src="./js/index.js"></script>
+<script async src="./js/ad.js" type="module"></script>
+<script async src="./js/poll.js" type="module"></script>
+<script async src="./js/index.js" type="module"></script>
+
 
 </html>

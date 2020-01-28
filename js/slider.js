@@ -92,10 +92,10 @@ $(document).ready(() => {
         }
     };
     $('.msmc-left').click(() => {
-        scroll('left')
+        scroll('right')
     });
     $('.msmc-right').click(() => {
-        scroll('right')
+        scroll('left')
     });
 
     sliderItemSize();
